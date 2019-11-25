@@ -37,6 +37,8 @@ body
 	&:hover
 		background-color: #000
 		color: #fff
+	&_darken
+		background-color: #000
 .list
 
 	&_line
@@ -80,7 +82,7 @@ body
 	text-align: right
 
 .slider
-	padding: 50px 0
+	padding: 20px 0 50px
 	&__container
 		
 
@@ -201,7 +203,8 @@ body
 		font-weight: 700
 		font-size: 18px
 
-	&-carousel
+	&-carousel,
+	&-carousel-2
 		.slick-next
 			&:before
 				font-family: "FontAwesome"
@@ -228,7 +231,7 @@ body
 	margin-bottom: 25px
 
 .banner
-	padding: 60px 0
+	padding: 60px 0 30px
 
 	&__container
 		position: relative
@@ -315,6 +318,116 @@ body
 	.product__img
 		padding: 2px
 
+.theme_black
+	color: #000
+	transition: .3s
+
+.theme_white
+	color: #ffffff
+	transition: .3s
+
+.mini-banner
+	&__container
+		position: relative
+		&:hover .theme_black
+			color: $accent
+		&:hover .theme_white
+			color: #000
+
+	&_content
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		padding: 20px
+		padding-left: 40px
+
+	&_title
+		text-transform: capitalize
+		font-size: 22px
+		font-weight: 400
+		margin-bottom: 0
+	&_text
+		margin-bottom: 0
+	&_img
+		img
+			width: 100%
+	
+.brand
+	&_img
+		transition: .3s
+		img
+			width: 100%
+		&:hover
+			opacity: .7
+
+
+.subscribe
+	&_wrap
+		background-color: $accent
+		padding: 20px 70px
+	&_title
+		font-weight: 500
+		font-size: 18px
+		color: #fff
+
+	&-form
+		display: flex
+		align-items: center
+		.input-form
+			border: 1px solid #f6f6f6
+			background: #f6f6f6
+			border-right: none
+			text-transform: capitalize
+			border-radius: 5px
+			margin-right: -10px
+			font-size: 14px
+			color: #242424
+			padding: 14px 10px
+			width: 100%
+
+.page-footer
+	padding: 20px 0 40px
+	color: #383838
+	.footer_title
+		font-weight: 400
+		color: #000
+		margin-bottom: 20px
+	.about-description
+		font-size: 13px
+	.footer-nav-list
+		li
+			margin-bottom: 10px
+			font-size: 13px
+			a
+				color: #383838
+				&:hover
+					color: $accent
+
+	.address
+		li
+			font-size: 13px
+			margin-bottom: 7px
+		a
+			font-size: 13px
+			font-family: 'Montserrat', sans-serif
+			color: #383838
+			&:hover
+				color: $accent
+		.fa
+			color: $accent
+			margin-right: 10px
+			font-size: 16px
+
+.copyright
+	padding-bottom: 30px
+	&_container
+		background-color: #f8f8f8
+		padding: 20px
+		p
+			color: #383838
+			text-align: center
+			font-size: 14px
+			margin-bottom: 0
 /*==========  user style  ==========*/
 
 @import "media" // Always at the end
