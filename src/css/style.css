@@ -8212,25 +8212,25 @@ body {
   font-size: 18px;
 }
 
-.product-carousel .slick-next:before, .product-carousel-2 .slick-next:before {
+.product-carousel .slick-next:before, .product-carousel-2 .slick-next:before, .product-carousel-lider .slick-next:before {
   font-family: "FontAwesome";
   content: '\f0da';
   color: #000;
   font-size: 32px;
 }
 
-.product-carousel .slick-next:hover:before, .product-carousel-2 .slick-next:hover:before {
+.product-carousel .slick-next:hover:before, .product-carousel-2 .slick-next:hover:before, .product-carousel-lider .slick-next:hover:before {
   color: #0aceb7;
 }
 
-.product-carousel .slick-prev:before, .product-carousel-2 .slick-prev:before {
+.product-carousel .slick-prev:before, .product-carousel-2 .slick-prev:before, .product-carousel-lider .slick-prev:before {
   font-family: "FontAwesome";
   content: '\f0d9';
   color: #000;
   font-size: 32px;
 }
 
-.product-carousel .slick-prev:hover:before, .product-carousel-2 .slick-prev:hover:before {
+.product-carousel .slick-prev:hover:before, .product-carousel-2 .slick-prev:hover:before, .product-carousel-lider .slick-prev:hover:before {
   color: #0aceb7;
 }
 
@@ -8283,6 +8283,12 @@ body {
   text-transform: capitalize;
 }
 
+@media (max-width: 1199px) {
+  .banner__title {
+    font-size: 22px;
+  }
+}
+
 .banner_wrapper_small {
   display: flex;
 }
@@ -8293,6 +8299,12 @@ body {
   font-size: 22px;
   font-weight: 700;
   color: #000;
+}
+
+@media (max-width: 1199px) {
+  .banner_hover_style {
+    font-size: 17px;
+  }
 }
 
 .banner_hover_position {
@@ -8313,6 +8325,12 @@ body {
   font-size: 80px;
   font-weight: 900;
   text-align: center;
+}
+
+@media (max-width: 1199px) {
+  .banner_hover_title {
+    font-size: 65px;
+  }
 }
 
 .banner_hover:hover .banner_img:before {
@@ -8336,6 +8354,12 @@ body {
 
 .banner_big_position .banner_hover_style {
   font-size: 40px;
+}
+
+@media (max-width: 1199px) {
+  .banner_big_position .banner_hover_style {
+    font-size: 32px;
+  }
 }
 
 .banner_big_position .banner_hover_title {
@@ -8392,6 +8416,12 @@ body {
   margin-bottom: 0;
 }
 
+@media (max-width: 1199px) {
+  .mini-banner_title {
+    font-size: 18px;
+  }
+}
+
 .mini-banner_text {
   margin-bottom: 0;
 }
@@ -8421,6 +8451,12 @@ body {
   font-weight: 500;
   font-size: 18px;
   color: #fff;
+}
+
+@media (max-width: 1199px) {
+  .subscribe_title {
+    font-size: 16px;
+  }
 }
 
 .subscribe-form {
@@ -8467,6 +8503,10 @@ body {
 
 .page-footer .footer-nav-list li a:hover {
   color: #0aceb7;
+}
+
+.page-footer .address {
+  white-space: nowrap;
 }
 
 .page-footer .address li {
