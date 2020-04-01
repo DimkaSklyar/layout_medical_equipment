@@ -181,16 +181,22 @@
 				<h2 class="section__title">Новое поступление</h2>
 				<div class="product-carousel">
 					<div class="product__item">
-						<a href="#">
+						<a href="#small-dialog" class="popup-with-move-anim main-order">
 							<div class="product__img">
 								<img src="img/products/product-1.png" alt="">
 							</div>
 						</a>
 						<div class="product__content">
 							<a href="#">
-								<h2 class="product__header">Регулируемая подствка для кровати</h2>
+								<h2 class="product__header">Регулируемая подставка для кровати</h2>
 							</a>
 							<span class="product__price">4399 руб.</span>
+							<div class="d-1 d-none">
+								Подставка под спину с регулировкой угла наклона используется для принятия пациентом необходимой позы.
+								Для комфортного использования подъемное приспособление с фиксатором может регулироваться угол наклона от
+								35 до 75 градусов, подставка под спину снабжена мягким подголовником , сделана из невпитывающего запахи
+								материала, легко подвергается мойке, каркас выполнен из металла.
+							</div>
 						</div>
 					</div>
 					<div class="product__item">
@@ -631,10 +637,82 @@
 				<p>© 2020 МедТехника. Все права защищены.</p>
 			</div>
 		</div>
-
 	</div>
+
+	<div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+		<div class="container order">
+			<div class="row no-gutters">
+				<div class="col-md-6 col-12">
+					<figure class="order-img-wrap">
+						<img src="img/products/product1.jpg" alt="" id="product-img">
+					</figure>
+				</div>
+				<div class="col-md-6 col-12 order-inner">
+					<div class="order-wrap d-flex flex-column justify-content-between">
+						<div class="order-description">
+							<h2 id="product-name">Заголовок</h2>
+							<p id="description-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima deserunt debitis ex
+								possimus doloribus
+								quia consequatur facilis delectus dolorum illo asperiores repellat, quidem iste, tempore
+								consequuntur
+								porro deleniti aliquam amet!</p>
+						</div>
+						<div class="order-pay">
+							<div class="price-wrap">
+								<span class="price" id="price">1000</span>
+							</div>
+							<div class="d-flex align-items-end">
+								<span class="help-col">Кол-во: </span>
+								<input type="number" name="quanty" id="quanty" value="1" min="1">
+								<a href="#p" class="btn-order" id="pay">Заказать</a>
+							</div>
+						</div>
+					</div>
+					<div class="order-form">
+						<span class="close"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+						<h2>Оформить заказ</h2>
+						<form action="" id="form-main-order">
+							<fieldset style="border:0;">
+								<ol>
+									<li>
+										<input id="name" name="name" type="text" placeholder="Имя" required="">
+									</li>
+									<li>
+										<input id="email" name="email" type="e-mail" placeholder="e-mail" required="">
+									</li>
+									<li>
+										<input id="phone-1" name="phone" type="tel" placeholder="+7 (999) 99-99-999" required="">
+									</li>
+									<li>
+										<label for="textarea">Комментарий к заказу</label><br>
+										<textarea id="textarea" name="comment"></textarea>
+									</li>
+									<li class="mt-2">
+										<label class="mb-3">Информация о заказе: </label><br>
+										<label for="quality-order">Кол-во: </label>
+										<input id="quality-order" type="number" name="quality-order" min="1" value="1">
+										<label for="sum-order">Сумма: </label>
+										<input id="sum" type="text" name="sum">
+									</li>
+								</ol>
+								<input id="name-order" type="text" name="name-order" hidden>
+								<input id="price-order" type="text" name="price-order" hidden>
+								<input id="count-order" type="text" name="count-order" hidden>
+								
+							</fieldset>
+							<div id="messegeResult-order" class="mt-2">
+								<button id="submit-form-z" type="submit" form="form-main-order" class="btn-order m0">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<script src="js/scripts.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/common.js"></script>
 </body>
 

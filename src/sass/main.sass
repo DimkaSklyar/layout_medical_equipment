@@ -44,6 +44,7 @@ body
 	color: #fff
 	font-weight: 500
 	display: inline-block
+	cursor: pointer
 	&:hover
 		background-color: #000
 		color: #fff
@@ -581,4 +582,162 @@ body
 /*==========  user style  ==========*/
 .slick-dots li button:before
 	font-size: 35px
+
+
+
+#small-dialog
+	max-width: 1170px
+	height: auto
+	padding: 0
+	overflow: hidden
+	margin: 0 auto
+	+media-breakpoint-down(lg)
+		max-width: 970px
+	+media-breakpoint-down(md)
+		max-width: 767px
+	+media-breakpoint-down(sm)
+		max-width: 713px
+		min-width: 500px
+	.order
+		padding: 0
+		.close
+			position: absolute
+			top: 2px
+			font-size: 27px
+			cursor: pointer
+		&-form
+			padding: 60px 40px 40px 20px
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			background-color: #fff
+			z-index: 10
+			transform: translateX(615px)
+			transition: 1s
+			background-color: #f6f6f6
+			h2
+				text-transform: uppercase
+				font-size: 1.4em
+				font-weight: 200
+				position: relative
+				margin-bottom: 30px
+				color: #000
+				&:before
+					position: absolute
+					content: ''
+					bottom: 0
+					height: 1px
+					width: 100%
+					background-color: $accent
+			ol
+				list-style: none
+				padding: 0
+				margin: 0
+			input
+				border-radius: 15px
+				padding: 10px 10px
+				margin-bottom: 15px
+				width: 100%
+				border: 1px solid #cecece
+				outline: none 0
+				&[type="number"]
+					width: 80px
+			#sum
+				width: 59%
+			textarea
+				width: 100%
+				border-radius: 15px
+				padding: 10px 10px
+				border: 1px solid #cecece
+			.btn-order
+				margin: 0 !important
+		.active
+			transform: translateX(0)
+		&-img-wrap
+			display: flex
+			height: 100%
+			flex-direction: column
+			background-color: #fff
+			padding: 35px
+			img
+				width: 100%
+				margin: auto 0
+		&-inner
+			background-color: #f6f6f6
+			padding: 60px 20px 40px
+			position: relative
+		&-wrap
+			height: 100%
+			h2
+				text-transform: uppercase
+				font-size: 1.4em
+				font-weight: 200
+				position: relative
+				margin-bottom: 30px
+				color: #000
+
+				&:before
+					position: absolute
+					content: ''
+					bottom: 0
+					height: 1px
+					width: 100%
+					background-color: $accent
+			p
+				margin-top: 40px
+				color: #808080
+		&-pay
+			border-top: 1px solid $accent
+			padding-top: 30px
+			.price-wrap
+				margin-bottom: 15px
+				font-size: 36px
+				i
+					font-size: 33px
+			#quanty
+				border-radius: 25px
+				width: 60px
+				font-size: 1.7em
+				outline: none 0
+				border: none
+				padding-left: 10px
+				border: 1px solid #eceaea
+				color: #808080
+				margin-left: 20px
+			.help-col
+				font-size: 1.7em
+				color: #808080
+				font-weight: 100
+		.btn-order
+			width: 173px
+			padding: 12px 10px 13px
+			text-align: center
+			text-transform: uppercase
+			display: inline-block
+			font-size: 14px
+			line-height: 20px
+			font-family: "Montserrat", sans-serif
+			font-weight: 700
+			border: none
+			outline: none
+			border-radius: 5px
+			transition: all 0.25s linear
+			background: $accent
+			color: #fff
+			cursor: pointer
+			margin-left: 40px
+			&:hover
+				background-color: #000
+	.info-price
+		font-size: 25px
+	.info-price-wrap
+		margin-bottom: 10px
+		i
+			font-size: 22px
+p.error
+	color: red
+	display: inline-block
+	padding-left: 10px
 @import "media" // Always at the end
