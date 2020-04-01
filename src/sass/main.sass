@@ -22,9 +22,19 @@ ul
 	margin: 0
 	padding: 0
 	list-style: none
-
+.container
+	+media-breakpoint-down(sm)
+		position: relative
+		margin-left: auto
+		margin-right: auto
+		padding-right: 15px
+		padding-left: 15px
+		width: auto
+html
+	min-width: 500px
 body
 	font-family: 'Montserrat', sans-serif
+	min-width: 500px
 .btn
 	border-radius: 5px
 	background-color: $accent
@@ -165,6 +175,9 @@ body
 		+media-breakpoint-down(md)
 			width: 150px
 			height: 150px
+		+media-breakpoint-down(sm)
+			width: 115px
+			height: 115px
 		img
 			width: 100%
 		&:hover
@@ -279,6 +292,8 @@ body
 			font-size: 22px
 		+media-breakpoint-down(md)
 			font-size: 15px
+		+media-breakpoint-down(sm)
+			font-size: 22px
 		
 	&_wrapper_small
 		display: flex
@@ -295,6 +310,8 @@ body
 				font-size: 17px
 			+media-breakpoint-down(md)
 				font-size: 14px
+			+media-breakpoint-down(sm)
+				font-size: 17px
 		&_position
 			position: absolute
 			bottom: 0
@@ -332,6 +349,11 @@ body
 		bottom: 20px
 		left: 50%
 		transform: translateX(-50%)
+		+media-breakpoint-down(sm)
+			width: 100%
+			top: 50%
+			transform: translate(-50%,-40%)
+			margin-top: 30px
 		.banner_hover_style
 			font-size: 40px
 			+media-breakpoint-down(lg)
@@ -342,9 +364,14 @@ body
 			font-size: 120px
 			+media-breakpoint-down(md)
 				font-size: 74px
+			+media-breakpoint-down(sm)
+				font-size: 150px
 .fix-col_banner
 	flex: 0 0 57.33333%
 	max-width: 57.33333%
+	+media-breakpoint-down(sm)
+		flex: 0 0 100%
+		max-width: 100%
 
 .best-product
 	.product__item
@@ -387,10 +414,16 @@ body
 			font-size: 18px
 		+media-breakpoint-down(md)
 			font-size: 14px
+		+media-breakpoint-down(sm)
+			font-size: 18px
+		+media-breakpoint-down(sm)
+			font-size: 16px
 	&_text
 		margin-bottom: 0
 		+media-breakpoint-down(md)
 			font-size: 13px
+		+media-breakpoint-down(sm)
+			font-size: 23px
 	&_img
 		img
 			width: 100%
@@ -412,6 +445,8 @@ body
 	&_wrap
 		background-color: $accent
 		padding: 20px 70px
+		+media-breakpoint-down(sm)
+			padding: 20px 15px
 	&_title
 		font-weight: 500
 		font-size: 18px
@@ -420,6 +455,8 @@ body
 			font-size: 16px
 		+media-breakpoint-down(md)
 			font-size: 13px
+		+media-breakpoint-down(sm)
+			font-size: 16px
 
 	&-form
 		display: flex
@@ -489,24 +526,27 @@ body
 		z-index: 99
 		top: 0
 		left: -100%
-		width: 600px
+		width: 85%
 		transition: .4s
 	&.active
 		left: 0
 	.navigation
-		flex-direction: column
-		padding-top: 50px
+		+media-breakpoint-down(md)
+			flex-direction: column
+			padding-top: 50px
 		&__item
-			display: block
-			margin-bottom: 15px
-			border-bottom: 2px solid rgba(0,0,0,0.15)
-			width: 100%
-			text-align: center
-			padding: 0 20px
+			+media-breakpoint-down(md)
+				display: block
+				margin-bottom: 15px
+				border-bottom: 2px solid rgba(0,0,0,0.15)
+				width: 100%
+				text-align: center
+				padding: 0 20px
 		&__link
-			display: block
-			font-size: 22px
-			font-weight: 300
+			+media-breakpoint-down(md)
+				display: block
+				font-size: 22px
+				font-weight: 300
 
 .mobile-menu
 	&__btn
@@ -521,7 +561,7 @@ body
 		+media-breakpoint-down(md)
 			position: fixed
 			right: -100%
-			width: calc(100vw - 600px)
+			width: calc(100vw - 85%)
 			top: 0
 			bottom: 0
 			background-color: rgba(#000,.5)
@@ -533,8 +573,12 @@ body
 			font-size: 100px
 			cursor: pointer
 			transition: .41s
+			padding-left: 20px
+			+media-breakpoint-down(sm)
+				font-size: 50px
 		&.active
 			right: 0
 /*==========  user style  ==========*/
-
+.slick-dots li button:before
+	font-size: 35px
 @import "media" // Always at the end
