@@ -271,3 +271,13 @@ $('#form-main-order').submit(function(e){
   e.preventDefault();
   AjaxFormRequest('messegeResult-order','form-main-order','./order.php');
 });
+
+$('#subscribe-form').submit(function(e){
+  e.preventDefault();
+  AjaxFormRequest('sub-result','subscribe-form','./subscribe.php');
+});
+
+$('#get-in').submit(function(e){
+  e.preventDefault();
+  AjaxFormRequest('get-in_wrap','get-in','./feedback.php');
+});

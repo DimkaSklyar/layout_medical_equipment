@@ -8044,11 +8044,23 @@ body {
   margin-right: 25px;
 }
 
+@media (max-width: 1199px) {
+  .navigation__item:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
 .navigation__link {
   text-transform: uppercase;
   font-weight: 500;
   color: #000;
   letter-spacing: 1px;
+}
+
+@media (max-width: 1199px) {
+  .navigation__link {
+    font-size: 15px;
+  }
 }
 
 .navigation__link:hover {
@@ -8841,6 +8853,7 @@ body {
   padding: 0;
   overflow: hidden;
   margin: 0 auto;
+  position: relative;
 }
 
 @media (max-width: 1199px) {
@@ -8912,7 +8925,7 @@ body {
 }
 
 #small-dialog .order-form input {
-  border-radius: 15px;
+  border-radius: 5px;
   padding: 10px 10px;
   margin-bottom: 15px;
   width: 100%;
@@ -8930,7 +8943,7 @@ body {
 
 #small-dialog .order-form textarea {
   width: 100%;
-  border-radius: 15px;
+  border-radius: 5px;
   padding: 10px 10px;
   border: 1px solid #cecece;
 }
@@ -9004,7 +9017,7 @@ body {
 }
 
 #small-dialog .order-pay #quanty {
-  border-radius: 25px;
+  border-radius: 5px;
   width: 60px;
   font-size: 1.7em;
   outline: none 0;
@@ -9061,6 +9074,82 @@ p.error {
   color: red;
   display: inline-block;
   padding-left: 10px;
+}
+
+.page-contacts__address {
+  padding: 60px 0 0;
+}
+
+.page-contacts__address .address__item h2 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.page-contacts__address .address__item li {
+  margin-bottom: 50px;
+}
+
+.page-contacts__address .address__item li.social__item {
+  margin-bottom: 20px;
+}
+
+.page-contacts__address .address__item li.social__item i {
+  font-size: 26px;
+  color: #0aceb7;
+  margin-right: 10px;
+  width: 27px;
+  display: block;
+  float: left;
+  margin-top: -3px;
+}
+
+.page-contacts__address .address__item li.social__item a {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.page-contacts__address .address__item li.social__item a:hover {
+  transform: scale(1.05);
+}
+
+.page-contacts__address .address__item .address_img {
+  float: left;
+  font-size: 45px;
+  color: #0aceb7;
+  margin-right: 25px;
+  line-height: 1;
+  margin-top: -3px;
+}
+
+.page-contacts__address .address__item h3 {
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+.page-contacts__address .address__item p {
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.page-contacts__address .address__item p a {
+  color: #000;
+}
+
+.page-contacts__address .address__item p a:hover {
+  color: #0aceb7;
+}
+
+.page-contacts #get-in .input-form {
+  border-radius: 5px;
+  padding: 10px 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  border: 1px solid #f1f1f1;
+  outline: none 0;
 }
 
 /*==========  Desktop First  ==========*/
