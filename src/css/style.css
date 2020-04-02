@@ -7979,10 +7979,6 @@ ul {
   }
 }
 
-html {
-  min-width: 500px;
-}
-
 body {
   font-family: 'Montserrat', sans-serif;
   min-width: 500px;
@@ -9150,6 +9146,34 @@ p.error {
   width: 100%;
   border: 1px solid #f1f1f1;
   outline: none 0;
+}
+
+.about-us-info {
+  line-height: 1.7;
+}
+
+.list-style {
+  margin-bottom: 20px;
+}
+
+.list-style li {
+  position: relative;
+  padding-left: 25px;
+  margin-left: 15px;
+}
+
+.list-style li:before {
+  position: absolute;
+  content: '\f21e';
+  font-family: "FontAwesome";
+  left: 0;
+  top: 0;
+  color: #0aceb7;
+}
+
+.table-style td {
+  border: 1px solid #0aceb7;
+  padding: 5px 40px 5px 10px;
 }
 
 /*==========  Desktop First  ==========*/

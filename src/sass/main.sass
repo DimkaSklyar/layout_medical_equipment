@@ -30,8 +30,6 @@ ul
 		padding-right: 15px
 		padding-left: 15px
 		width: auto
-html
-	min-width: 500px
 body
 	font-family: 'Montserrat', sans-serif
 	min-width: 500px
@@ -801,4 +799,27 @@ p.error
 			width: 100%
 			border: 1px solid #f1f1f1
 			outline: none 0
+
+.about-us-info
+	line-height: 1.7
+
+
+.list-style
+	margin-bottom: 20px
+	li
+		position: relative
+		padding-left: 25px
+		margin-left: 15px
+		&:before
+			position: absolute
+			content: '\f21e'
+			font-family: "FontAwesome"
+			left: 0
+			top: 0
+			color: $accent
+.table-style
+	td
+		border: 1px solid $accent
+		padding: 5px 40px 5px 10px
+
 @import "media" // Always at the end
