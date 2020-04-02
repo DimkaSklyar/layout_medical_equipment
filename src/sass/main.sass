@@ -1,6 +1,7 @@
 @import "vars"
 @import "fonts"
 @import "main.scss"
+@import "_mixins/_keyframes.sass"
 @import "libs"
 
 /*==========  user style  ==========*/
@@ -84,8 +85,9 @@ body
 		font-weight: 500
 		color: #000
 		letter-spacing: 1px
+		font-size: 15px
 		+media-breakpoint-down(lg)
-			font-size: 15px
+			font-size: 12px
 		&:hover
 			color: $accent
 		&.active
@@ -821,5 +823,55 @@ p.error
 	td
 		border: 1px solid $accent
 		padding: 5px 40px 5px 10px
+
+.delivery-info
+	&__item
+		padding: 20px 0
+	.row
+		padding: 50px 0
+	&__img
+		display: flex
+		justify-content: center
+		align-items: center
+		font-size: 50px
+		color: $accent
+		padding: 40px 0
+		border: 2px solid $accent
+		border-radius: 50%
+		width: 100px
+		height: 100px
+		margin: 0 auto
+		margin-bottom: 25px
+		transition: .3s
+		cursor: pointer
+		&:hover
+			animation: name-of-animation 1s infinite ease-in-out
+			animation-direction: alternate;
+	&__text
+		text-align: center
+		font-size: 14px
+		&_img
+			padding: 0 30px
+			display: flex
+			align-items: center
+			justify-content: center
+			transition: .3s
+			&:hover
+				transform: scale(1.05)
+			&.fix-big-img
+				padding: 0 90px
+			img
+				width: 100%
+
+
+
+
++keyframes(name-of-animation)
+	0%
+		transform: rotate(0px)
+	50%
+		transform: rotate(15deg)
+	100%
+		transform: rotate(-15deg)
 
 @import "media" // Always at the end

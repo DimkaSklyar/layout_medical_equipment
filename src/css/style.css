@@ -26,6 +26,56 @@
   src: url("../fonts/FontAwesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/FontAwesome/fontawesome-webfont.woff") format("woff"), url("../fonts/FontAwesome/fontawesome-webfont.ttf") format("truetype");
 }
 
+.col-xs-5th,
+.col-sm-5th,
+.col-md-5th,
+.col-lg-5th {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 20%;
+  float: left;
+}
+
+.col-5-th {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 20%;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+@media (min-width: 768px) {
+  .col-sm-5th {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 20%;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-5th {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 20%;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-5th {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 20%;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -8051,11 +8101,12 @@ body {
   font-weight: 500;
   color: #000;
   letter-spacing: 1px;
+  font-size: 15px;
 }
 
 @media (max-width: 1199px) {
   .navigation__link {
-    font-size: 15px;
+    font-size: 12px;
   }
 }
 
@@ -9174,6 +9225,117 @@ p.error {
 .table-style td {
   border: 1px solid #0aceb7;
   padding: 5px 40px 5px 10px;
+}
+
+.delivery-info__item {
+  padding: 20px 0;
+}
+
+.delivery-info .row {
+  padding: 50px 0;
+}
+
+.delivery-info__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: #0aceb7;
+  padding: 40px 0;
+  border: 2px solid #0aceb7;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.delivery-info__img:hover {
+  animation: name-of-animation 1s infinite ease-in-out;
+  animation-direction: alternate;
+}
+
+.delivery-info__text {
+  text-align: center;
+  font-size: 14px;
+}
+
+.delivery-info__text_img {
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+}
+
+.delivery-info__text_img:hover {
+  transform: scale(1.05);
+}
+
+.delivery-info__text_img.fix-big-img {
+  padding: 0 90px;
+}
+
+.delivery-info__text_img img {
+  width: 100%;
+}
+
+@-webkit-keyframes name-of-animation {
+  0% {
+    transform: rotate(0px);
+  }
+
+  50% {
+    transform: rotate(15deg);
+  }
+
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+
+@-moz-keyframes name-of-animation {
+  0% {
+    transform: rotate(0px);
+  }
+
+  50% {
+    transform: rotate(15deg);
+  }
+
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+
+@-ms-keyframes name-of-animation {
+  0% {
+    transform: rotate(0px);
+  }
+
+  50% {
+    transform: rotate(15deg);
+  }
+
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+
+@keyframes name-of-animation {
+  0% {
+    transform: rotate(0px);
+  }
+
+  50% {
+    transform: rotate(15deg);
+  }
+
+  100% {
+    transform: rotate(-15deg);
+  }
 }
 
 /*==========  Desktop First  ==========*/
