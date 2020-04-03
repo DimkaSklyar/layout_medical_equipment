@@ -9278,8 +9278,61 @@ p.error {
   padding: 0 90px;
 }
 
+@media (max-width: 991px) {
+  .delivery-info__text_img.fix-big-img {
+    padding: 0 50px;
+  }
+}
+
 .delivery-info__text_img img {
   width: 100%;
+}
+
+@media (max-width: 767px) {
+  .delivery-info__text_img.p-md-fix {
+    padding: 0 100px;
+  }
+}
+
+.tbl {
+  width: 100%;
+}
+
+.tbl .fa-check {
+  color: #0aceb7;
+}
+
+.tbl .fa-minus {
+  color: red;
+}
+
+.tbl td {
+  padding: 10px;
+}
+
+.tbl td:last-child {
+  text-align: right;
+}
+
+.tbl th {
+  font-size: 15px;
+  padding: 10px;
+}
+
+.tbl th:last-child {
+  text-align: right;
+}
+
+.tbl tr {
+  font-size: 15px;
+}
+
+.tbl tr:nth-child(even) {
+  background-color: rgba(10, 206, 183, 0.3);
+}
+
+.tbl tr:nth-child(odd) {
+  background-color: #fafafa;
 }
 
 @-webkit-keyframes name-of-animation {

@@ -860,10 +860,35 @@ p.error
 				transform: scale(1.05)
 			&.fix-big-img
 				padding: 0 90px
+				+media-breakpoint-down(md)
+					padding: 0 50px
 			img
 				width: 100%
+			&.p-md-fix
+				+media-breakpoint-down(sm)
+					padding: 0 100px
 
-
+.tbl
+	width: 100%
+	.fa-check
+		color: $accent
+	.fa-minus
+		color: red
+	td
+		padding: 10px
+		&:last-child
+			text-align: right
+	th
+		font-size: 15px
+		padding: 10px
+		&:last-child
+			text-align: right
+	tr
+		font-size: 15px
+		&:nth-child(even)
+			background-color: rgba($accent,.3)
+		&:nth-child(odd)
+			background-color: darken(#fff,2%)
 
 
 +keyframes(name-of-animation)
