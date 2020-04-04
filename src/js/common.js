@@ -194,12 +194,40 @@ $(document).ready(function () {
 });
 var priceBegin;
 $(".main-order").click(function () {
+  $('#quanty').attr('min', 1);
+  $('#quality-order').attr('min', 1);
   $("#price").text($(this).closest(".product__item").find(".product__price").text());
   $("#quanty").val(1);
   $("#product-img").attr("src", $(this).closest(".product__item").find("img").attr("src"));
   $("#product-name").text($(this).closest(".product__item").find(".product__header").text());
   $("#description-1").text($(this).closest(".product__item").find(".d-1").text());
   priceBegin = $('#price').text().replace(/руб./g, "");
+  if (priceBegin < 50) {
+    $('#quanty').val(200);
+    $('#quanty').attr('min', 200);
+    $('#quality-order').attr('min', 200);
+    $("#price").text(+priceBegin * $('#quanty').val() + " руб.");
+  } else if (priceBegin < 150) {
+    $('#quanty').val(10);
+    $('#quanty').attr('min', 10);
+    $('#quality-order').attr('min', 10);
+    $("#price").text(+priceBegin * $('#quanty').val() + " руб.");
+  } else if (priceBegin < 550) {
+    $('#quanty').val(5);
+    $('#quanty').attr('min', 5);
+    $('#quality-order').attr('min', 5);
+    $("#price").text(+priceBegin * $('#quanty').val() + " руб.");
+  } else if (priceBegin < 5000) {
+    $('#quanty').val(3);
+    $('#quanty').attr('min', 3);
+    $('#quality-order').attr('min', 3);
+    $("#price").text(+priceBegin * $('#quanty').val() + " руб.");
+  } else {
+    $('#quanty').val(1);
+    $('#quanty').attr('min', 1);
+    $('#quality-order').attr('min', 1);
+    $("#price").text(+priceBegin * $('#quanty').val() + " руб.");
+  }
 });
 
 $('#pay').click(function () {
@@ -214,7 +242,7 @@ $('#pay').click(function () {
   $('#sum').val(sum + " руб.");
   $('#price-order').val(price);
   $('#count-order').val(count);
-  $('#sum-order').val(sum);
+  $('#sum-order').val(sum.toFixed(2));
   $('#name-order').val($('#product-name').text());
   $('.close').removeClass('close-active');
 });
@@ -284,6 +312,11 @@ $('#subscribe-form').submit(function (e) {
 $('#get-in').submit(function (e) {
   e.preventDefault();
   AjaxFormRequest('get-in_wrap', 'get-in', './feedback.php');
+});
+
+$('#call-me').submit(function (e) {
+  e.preventDefault();
+  AjaxFormRequest('messegeResult-call-me', 'call-me', './call-me.php');
 });
 
 $(".navigation__item_with-sub").click(function (e) {

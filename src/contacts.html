@@ -47,12 +47,12 @@
               <li class="navigation__item"><a href="index.html" class="navigation__link">Главная</a></li>
               <li class="navigation__item navigation__item_with-sub">Каталог
                 <ul class="navigation__sub">
-                  <li class="navigation__item_sub"><a href="#">Медецинское оборудование</a></li>
-                  <li class="navigation__item_sub"><a href="#">Первая помощь</a></li>
-                  <li class="navigation__item_sub"><a href="#">Лекарства</a></li>
-                  <li class="navigation__item_sub"><a href="#">Уход и здоровье</a></li>
-                  <li class="navigation__item_sub"><a href="#">Оборудование для дома</a></li>
-                  <li class="navigation__item_sub"><a href="#">Диагностика</a></li>
+                  <li class="navigation__item_sub"><a href="med-equipment.html">Медецинское оборудование</a></li>
+                  <li class="navigation__item_sub"><a href="first-help.html">Первая помощь</a></li>
+                  <li class="navigation__item_sub"><a href="lekar.html">Расходные материалы</a></li>
+                  <li class="navigation__item_sub"><a href="uhod-life.html">Уход и здоровье</a></li>
+                  <li class="navigation__item_sub"><a href="for-home.html">Оборудование для дома</a></li>
+                  <li class="navigation__item_sub"><a href="diagnostic.html">Диагностика</a></li>
                 </ul>
               </li>
               <li class="navigation__item"><a href="license.html" class="navigation__link">Лицензирование</a></li>
@@ -64,7 +64,7 @@
         </div>
         <div class="col-lg-3 col-md-4 col-5 ml-auto ml-lg-0">
           <div class="order__wrap">
-            <a href="#" class="btn">Заказать звонок</a>
+            <a href="#call-me" class="btn popup-with-move-anim">Заказать звонок</a>
           </div>
         </div>
       </div>
@@ -200,12 +200,12 @@
         <div class="col-lg-3 col-md-4 col-12">
           <h2 class="footer_title">Категории</h2>
           <ul class="nav-category list footer-nav-list">
-            <li><a href="#">Медецинское оборудование</a></li>
-            <li><a href="#">Первая помощь</a></li>
-            <li><a href="#">Лекарства</a></li>
-            <li><a href="#">Уход и здоровье</a></li>
-            <li><a href="#">Оборудование для дома</a></li>
-            <li><a href="#">Диагностика</a></li>
+            <li><a href="med-equipment.html">Медецинское оборудование</a></li>
+            <li><a href="first-help.html">Первая помощь</a></li>
+            <li><a href="lekar.html">Расходные материалы</a></li>
+            <li><a href="uhod-life.html">Уход и здоровье</a></li>
+            <li><a href="for-home.html">Оборудование для дома</a></li>
+            <li><a href="diagnostic.html">Диагностика</a></li>
           </ul>
         </div>
         <div class="col-lg-2 col-md-4 col-12">
@@ -252,6 +252,28 @@
     </div>
   </div>
 
+  <form id="call-me" class="mfp-hide white-popup-block">
+    <h1>Заказать обратный звонок</h1>
+    <fieldset style="border:0;">
+      <ol class="list-style-none">
+        <li>
+          <input id="call-me-name" name="call-me-name" type="text" placeholder="Имя" required="">
+        </li>
+        <li>
+          <input id="call-me-phone-2" name="call-me-phone-2" type="tel" placeholder="+7 (999) 99-99-999" required="">
+        </li>
+        <li>
+          <label for="call-me-check" class="d-inline-block">
+            <input id="call-me-check" name="call-me-check" type="checkbox" checked>
+            Я принимаю условия <a href="politica-konfedencialnosty.html">пользовательского соглашения.
+          </label>
+        </li>
+      </ol>
+      <div id="messegeResult-call-me" class="mt-2">
+        <button id="submit-call-me" type="submit" form="call-me" class="btn m0">Отправить</button>
+      </div>
+    </fieldset>
+  </form>
 
   <script src="js/scripts.min.js"></script>
   <script src="js/slick.min.js"></script>

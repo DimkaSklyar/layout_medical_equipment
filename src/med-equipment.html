@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/style.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<title>Медтехника - Каталог</title>
+	<title>Медтехника - Медецинское оборудование</title>
 </head>
 
 <body>
@@ -49,7 +49,7 @@
 								<ul class="navigation__sub">
 									<li class="navigation__item_sub active"><a href="med-equipment.html">Медецинское оборудование</a></li>
 									<li class="navigation__item_sub"><a href="first-help.html">Первая помощь</a></li>
-									<li class="navigation__item_sub"><a href="lekar.html">Лекарства</a></li>
+									<li class="navigation__item_sub"><a href="lekar.html">Расходные материалы</a></li>
 									<li class="navigation__item_sub"><a href="uhod-life.html">Уход и здоровье</a></li>
 									<li class="navigation__item_sub"><a href="for-home.html">Оборудование для дома</a></li>
 									<li class="navigation__item_sub"><a href="diagnostic.html">Диагностика</a></li>
@@ -83,23 +83,24 @@
 					<div class="col-lg-3 col-md-4 col-12 flex-last flex-md-unordered">
 						<h2>Категории товаров</h2>
 						<ul class="list category-product">
-							<li class="category-product_btn"><a href="med-equipment.html">Медецинское оборудование</a></li>
+							<li class="category-product_btn active"><a href="med-equipment.html">Медецинское оборудование</a></li>
 							<li class="category-product_btn"><a href="first-help.html">Первая помощь</a></li>
-							<li class="category-product_btn"><a href="lekar.html">Лекарства</a></li>
+							<li class="category-product_btn"><a href="lekar.html">Расходные материалы</a></li>
 							<li class="category-product_btn"><a href="uhod-life.html">Уход и здоровье</a></li>
 							<li class="category-product_btn"><a href="for-home.html">Оборудование для дома</a></li>
 							<li class="category-product_btn"><a href="diagnostic.html">Диагностика</a></li>
 						</ul>
 						<div class="new-colection d-none d-md-block">
-							<a type="button" data-filter=".new">
+							<a type="button" data-filter=".new" class="new-filter">
 								<h3>Новые поступления</h3>
 							</a>
 							<img src="img/2_377x503_crop_center.jpg" alt="">
 						</div>
 					</div>
 					<div class="col-lg-9 col-md-8 col-12">
+						<h2>Показывать: <span class="filter" type="button" data-filter="all">Все</span></h2>
 						<div class="row products-mix">
-							<div class="col-lg-4 col-6 mix">
+							<div class="col-lg-4 col-6 mix new">
 								<div class="product__item">
 									<a href="#small-dialog" class="popup-with-move-anim main-order">
 										<div class="product__img">
@@ -186,7 +187,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-4 col-6 mix">
+							<div class="col-lg-4 col-6 mix new">
 								<div class="product__item">
 									<a href="#small-dialog" class="popup-with-move-anim main-order">
 										<div class="product__img">
@@ -307,7 +308,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-4 col-6 mix">
+							<div class="col-lg-4 col-6 mix new">
 								<div class="product__item">
 									<a href="#small-dialog" class="popup-with-move-anim main-order">
 										<div class="product__img">
@@ -366,7 +367,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-4 col-6 mix">
+							<div class="col-lg-4 col-6 mix new">
 								<div class="product__item">
 									<a href="#small-dialog" class="popup-with-move-anim main-order">
 										<div class="product__img">
@@ -431,7 +432,7 @@
 					<ul class="nav-category list footer-nav-list">
 						<li><a href="med-equipment.html">Медецинское оборудование</a></li>
 						<li><a href="first-help.html">Первая помощь</a></li>
-						<li><a href="lekar.html">Лекарства</a></li>
+						<li><a href="lekar.html">Расходные материалы</a></li>
 						<li><a href="uhod-life.html">Уход и здоровье</a></li>
 						<li><a href="for-home.html">Оборудование для дома</a></li>
 						<li><a href="diagnostic.html">Диагностика</a></li>
@@ -566,9 +567,11 @@
 						<input id="call-me-check" name="call-me-check" type="checkbox" checked>
 						Я принимаю условия <a href="politica-konfedencialnosty.html">пользовательского соглашения.
 					</label>
-					
 				</li>
 			</ol>
+			<div id="messegeResult-call-me" class="mt-2">
+				<button id="submit-call-me" type="submit" form="call-me" class="btn m0">Отправить</button>
+			</div>
 		</fieldset>
 	</form>
 
