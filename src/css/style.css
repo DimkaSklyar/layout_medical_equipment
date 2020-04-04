@@ -9357,6 +9357,34 @@ p.error {
   }
 }
 
+.ol-list {
+  counter-reset: item;
+  margin: 0;
+  padding-left: 10px;
+  line-height: 1.9;
+}
+
+.ol-list > li {
+  display: block;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.ol-list > li:before {
+  content: counters(item, ".") " ";
+  counter-increment: item;
+}
+
+.ol-list ul {
+  list-style-type: disc;
+  padding-left: 25px;
+}
+
+.ol-first > li {
+  font-weight: bold;
+  font-size: 24px;
+}
+
 .page-contacts__address {
   padding: 60px 0 0;
 }

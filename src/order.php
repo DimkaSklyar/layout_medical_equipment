@@ -1,19 +1,19 @@
 <?php 
 if($_POST) 
 { 
-$to = "cactus8@yandex.ru"; //куда отправлять письмо 
+$to = "mail@mail.ru"; //куда отправлять письмо 
 $subject = "Заказ!"; //тема 
-$message = '<span style="font-weight:bold;color:#ff6600;font-size:18px;"><i>ЗАЯВКА!</i> </span><br><br> 
+$message = '<span style="font-weight:bold;color:#ff6600;font-size:18px;"><i>Заказ!</i> </span><br><br> 
 Имя: <span style="font-weight:bold;color:#000;">'.$_POST['name'].'</span><br> 
 E-mail: <span style="font-weight:bold;color:#000;">'.$_POST['email'].'</span><br> 
 Телефон: <span style="font-weight:bold;color:#339900;">'.$_POST['phone'].'</span><br> 
 Имя товара: <span style="font-weight:bold;color:#339900;">'.$_POST['name-order'].'</span><br> 
 Цена товара: <span style="font-weight:bold;color:#339900;">'.$_POST['price-order'].'</span><br>  
 Количество товара: <span style="font-weight:bold;color:#339900;">'.$_POST['count-order'].'</span><br>  
-Сумма заказа: <span style="font-weight:bold;color:#339900;">'.$_POST['sum-order'].'</span><br>  
+Сумма заказа: <span style="font-weight:bold;color:#339900;">'.$_POST['sum'].'</span><br>  
 Комментарий: <span style="font-weight:bold;color:#339900;font-size:24px;"> '.$_POST['comment'].'</span>'; 
 $headers = "Content-type: text/html; charset=UTF-8 \r\n"; 
-$headers .= "From: info@my-site.ru\r\n"; // от кого, придумайте ящик или укажите почту своего сайта. 
+$headers .= "From: mail@mail.ru\r\n"; // от кого, придумайте ящик или укажите почту своего сайта. 
 $result = mail($to, $subject, $message, $headers); 
 
 if ($result){ 

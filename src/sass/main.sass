@@ -879,7 +879,24 @@ p.error
 	+media-breakpoint-down(lg)
 		padding-left: 15px
 		padding-right: 15px
-
+.ol-list
+	counter-reset: item
+	margin: 0
+	padding-left: 10px
+	line-height: 1.9
+	& > li
+		display: block
+		font-weight: normal
+		font-size: 16px
+		&:before
+			content: counters(item, ".") " "
+			counter-increment: item
+	ul
+		list-style-type: disc
+		padding-left: 25px
+.ol-first > li
+	font-weight: bold
+	font-size: 24px
 .page-contacts
 	&__address
 		padding: 60px 0 0

@@ -6,8 +6,7 @@ $subject = "Обратная связь!"; //тема
 $message = '<span style="font-weight:bold;color:#ff6600;font-size:18px;"><i>Обратная связь!</i> </span><br><br> 
 Имя: <span style="font-weight:bold;color:#000;">'.$_POST['name'].'</br>
 Email: <span style="font-weight:bold;color:#000;">'.$_POST['email'].'</br>
-Телефон: <span style="font-weight:bold;color:#000;">'.$_POST['tel'].'</br>
-Комментарий: <span style="font-weight:bold;color:#000;">'.$_POST['comment'];
+Комментарий: <span style="font-weight:bold;color:#000;">'.$_POST['textarea'];
 $headers = "Content-type: text/html; charset=UTF-8 \r\n"; 
 $headers .= "From: mail@mail.ru\r\n"; // от кого, придумайте ящик или укажите почту своего сайта. 
 $result = mail($to, $subject, $message, $headers); 
