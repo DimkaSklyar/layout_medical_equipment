@@ -45,7 +45,16 @@
           <nav>
             <ul class="list list_line navigation">
               <li class="navigation__item"><a href="index.html" class="navigation__link">Главная</a></li>
-              <li class="navigation__item"><a href="catalog.html" class="navigation__link">Каталог</a></li>
+              <li class="navigation__item navigation__item_with-sub">Каталог
+                <ul class="navigation__sub">
+                  <li class="navigation__item_sub"><a href="#">Медецинское оборудование</a></li>
+                  <li class="navigation__item_sub"><a href="#">Первая помощь</a></li>
+                  <li class="navigation__item_sub"><a href="#">Лекарства</a></li>
+                  <li class="navigation__item_sub"><a href="#">Уход и здоровье</a></li>
+                  <li class="navigation__item_sub"><a href="#">Оборудование для дома</a></li>
+                  <li class="navigation__item_sub"><a href="#">Диагностика</a></li>
+                </ul>
+              </li>
               <li class="navigation__item"><a href="license.html" class="navigation__link">Лицензирование</a></li>
               <li class="navigation__item"><a href="about-us.html" class="navigation__link">О нас</a></li>
               <li class="navigation__item"><a href="delivery.html" class="navigation__link">Оплата и доставка</a></li>
@@ -125,8 +134,8 @@
               <form id="get-in">
                 <input class="input-form" type="text" id="name" name="name" placeholder="Имя" required>
                 <input class="input-form" type="email" id="email" name="email" placeholder="email" required>
-                <textarea class="input-form" name="textarea" id="textarea" cols="30" rows="4"
-                  placeholder="Сообщение" required></textarea>
+                <textarea class="input-form" name="textarea" id="textarea" cols="30" rows="4" placeholder="Сообщение"
+                  required></textarea>
               </form>
               <div class="mt-2">
                 <button id="submit-form-z" type="submit" form="get-in" class="btn m0">Отправить</button>
@@ -203,7 +212,6 @@
           <h2 class="footer_title">Навигация</h2>
           <ul class="list footer-nav-list">
             <li class="navigation__item"><a href="index.html">Главная</a></li>
-            <li class="navigation__item"><a href="catalog.html">Каталог</a></li>
             <li class="navigation__item"><a href="license.html">Лицензирование</a></li>
             <li class="navigation__item"><a href="about-us.html">О нас</a></li>
             <li class="navigation__item"><a href="delivery.html">Доставка и оплата</a></li>
