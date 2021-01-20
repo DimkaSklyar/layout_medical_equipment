@@ -31,12 +31,11 @@
     "gulp-clean-css": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-cssbeautify": "^1.0.1",
-    "gulp-imagemin": "^5.0.3",
+    "gulp-image": "^6.2.1",
     "gulp-notify": "^3.2.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
     "gulp-util": "^3.0.8",
-    "imagemin-pngquant": "^7.0.0"
   }
 }
